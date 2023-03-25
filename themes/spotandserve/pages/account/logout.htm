@@ -1,0 +1,21 @@
+title = "Logout"
+url = "/account/logout"
+layout = "account"
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+redirect = '/account/details'
+
+[session]
+security = "all"
+==
+<?php
+function onStart()
+{
+    Auth::logout();
+    return redirect()->to('/account/login');
+}
+?>
+==

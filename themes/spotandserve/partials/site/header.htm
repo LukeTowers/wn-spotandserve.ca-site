@@ -1,5 +1,13 @@
+==
+<?php
+function onStart()
+{
+    $this['logged_in'] = Auth::check();
+}
+?>
+==
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full bg-gray-50">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,7 +51,13 @@
                     </button>
                 </div>
                 <div class="hidden lg:flex">
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+                    {% if logged_in %}
+                        <a href="{{ 'account/details' | page }}" class="text-sm font-semibold leading-6 text-gray-900 mr-4">My Account</a>
+                        <a href="{{ 'account/logout' | page }}" class="text-sm font-semibold leading-6 text-gray-900">Log out</a>
+                    {% else %}
+                        <a href="{{ 'account/register' | page }}" class="text-sm font-semibold leading-6 text-gray-900 mr-4">Register</a>
+                        <a href="{{ 'account/login' | page }}" class="text-sm font-semibold leading-6 text-gray-900">Log in</a>
+                    {% endif %}
                 </div>
             </nav>
             <!-- Mobile menu, show/hide based on menu open state. -->
