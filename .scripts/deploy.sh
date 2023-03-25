@@ -30,7 +30,7 @@ php artisan package:discover
 
 # Install node modules
 echo "Installing dependencies from package-lock.json"
-php artisan npm ci
+npm ci
 
 echo "Compiling theme assets"
 php artisan mix:compile -p theme-spotandserve --production
