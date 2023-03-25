@@ -45,6 +45,7 @@ class Plugin extends PluginBase
     {
         return [
             \SAS\Requests\Components\SubmitRequest::class => 'submitRequest',
+            \SAS\Requests\Components\RequestMap::class => 'requestMap',
         ];
     }
 

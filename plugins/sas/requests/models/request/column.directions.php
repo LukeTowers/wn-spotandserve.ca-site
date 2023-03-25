@@ -1,1 +1,1 @@
-<a href="<?= $record->getDirectionsUrl(); ?>" class="btn btn-primary" target="_blank">Get Directions</a>
+<a href="<?= $record->directions_url; ?>" class="btn btn-primary" target="_blank">Get Directions</a>

@@ -23,6 +23,11 @@ class Request extends Model
      */
     public $rules = [];
 
+    public $appends = [
+        'directions_url',
+        'type_name',
+    ];
+
     /**
      * @var array Attributes to be cast to JSON
      */
@@ -51,7 +56,12 @@ class Request extends Model
         return @$this->data['location']['lng'];
     }
 
-    public function getDirectionsUrl()
+    public function getTypeNameAttribute(): string
+    {
+        return $this->type?->name ?? 'Other';
+    }
+
+    public function getDirectionsUrlAttribute()
     {
         $lat = $this->latitude;
         $lng = $this->longitude;
@@ -109,7 +119,6 @@ class Request extends Model
         if (!$this->exists) {
             $this->rules = array_merge($this->rules, [
                 'description' => 'required',
-                'data.addressfinder' => 'required',
             ]);
         }
     }

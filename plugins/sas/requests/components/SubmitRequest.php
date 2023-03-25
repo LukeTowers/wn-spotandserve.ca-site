@@ -125,7 +125,7 @@ class SubmitRequest extends ComponentBase
             'submitted_address' => @$model->data['addressfinder'],
             'address'           => $model->address,
             'city'              => $model->city,
-            'link'              => $model->getDirectionsUrl(),
+            'link'              => $model->directions_url,
             'admin_url'         => Backend::url('sas/requests/requests/update/' . $model->id),
             'description'       => $model->description,
             'contact_email'     => @$model->data['contact']['email'],

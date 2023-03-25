@@ -8,7 +8,6 @@ fields:
         label: Start typing to search for an address
         type: addressfinder
         countryRestriction: 'ca'
-        required: true
         attributes:
             data-input-latitude: '#GMapsLocationPicker-formDataLocation-lat-data-location'
             data-input-longitude: '#GMapsLocationPicker-formDataLocation-lng-data-location'
@@ -19,6 +18,11 @@ fields:
         span: full
         lat: 50.4133913
         lng: -104.5897611
+
+    type:
+        label: Type of Request
+        type: relation
+        span: full
 
     photo:
         label: Picture (optional)
