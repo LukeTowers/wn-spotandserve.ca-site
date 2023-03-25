@@ -1,0 +1,21 @@
+{
+    "devDependencies": {
+        "laravel-mix": "^6.0.41"
+    },
+    "workspaces": {
+        "packages": [
+            "themes/spotandserve",
+            "themes/workshop"
+        ],
+        "ignoredPackages": [
+            "modules/backend",
+            "modules/system",
+            "plugins/winter/blocks",
+            "plugins/winter/ckeditor",
+            "plugins/winter/driveraws",
+            "plugins/winter/sentry",
+            "plugins/winter/sso",
+            "plugins/winter/tailwindui"
+        ]
+    }
+}

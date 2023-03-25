@@ -1,0 +1,21 @@
+name: "spotandserve"
+description: "Theme for spotandserve.ca"
+author: "Luke Towers"
+homepage: "https://spotandserve.ca"
+code: "spotandserve"
+form:
+    fields:
+        googleanalytics_id:
+            label: themes.spotandserve::lang.options.googleanalytics_id
+            type: text
+            span: full
+        color_primary:
+            label: themes.spotandserve::lang.options.color_primary
+            type: colorpicker
+            span: left
+            default: "#103141"
+        color_secondary:
+            label: themes.spotandserve::lang.options.color_secondary
+            type: colorpicker
+            span: right
+            default: "#2DA7C7"
