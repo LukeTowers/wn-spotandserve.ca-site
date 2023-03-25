@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "714775c8ce5632a6c17ebd9eea42aa35",
+    "content-hash": "949f71f33c2d671f84546421761d95f9",
     "packages": [
         {
             "name": "assetic/framework",
@@ -2927,21 +2927,22 @@
         },
         {
             "name": "luketowers/oc-essentialvars-plugin",
-            "version": "v1.0.6",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LukeTowers/oc-essentialvars-plugin.git",
-                "reference": "39e7465cc9ebd2d57f0560a09a089c9db6e61f86"
+                "reference": "640cf68290aa8ba2b3ad160d6a8bd2efaa7a8176"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LukeTowers/oc-essentialvars-plugin/zipball/39e7465cc9ebd2d57f0560a09a089c9db6e61f86",
-                "reference": "39e7465cc9ebd2d57f0560a09a089c9db6e61f86",
+                "url": "https://api.github.com/repos/LukeTowers/oc-essentialvars-plugin/zipball/640cf68290aa8ba2b3ad160d6a8bd2efaa7a8176",
+                "reference": "640cf68290aa8ba2b3ad160d6a8bd2efaa7a8176",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0"
             },
+            "default-branch": true,
             "type": "october-plugin",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2963,9 +2964,9 @@
             ],
             "support": {
                 "issues": "https://github.com/LukeTowers/oc-essentialvars-plugin/issues",
-                "source": "https://github.com/LukeTowers/oc-essentialvars-plugin/tree/v1.0.6"
+                "source": "https://github.com/LukeTowers/oc-essentialvars-plugin/tree/master"
             },
-            "time": "2019-10-05T04:01:57+00:00"
+            "time": "2023-03-25T05:10:17+00:00"
         },
         {
             "name": "mexitek/phpcolors",
@@ -8631,12 +8632,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wintercms/wn-blocks-plugin.git",
-                "reference": "7ca69852704eeeb3613fc57852725167d9288811"
+                "reference": "c7edec13c5778b1e9d9a310d772e8f9d940cd4c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wintercms/wn-blocks-plugin/zipball/7ca69852704eeeb3613fc57852725167d9288811",
-                "reference": "7ca69852704eeeb3613fc57852725167d9288811",
+                "url": "https://api.github.com/repos/wintercms/wn-blocks-plugin/zipball/c7edec13c5778b1e9d9a310d772e8f9d940cd4c3",
+                "reference": "c7edec13c5778b1e9d9a310d772e8f9d940cd4c3",
                 "shasum": ""
             },
             "default-branch": true,
@@ -8681,7 +8682,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-03-09T21:43:05+00:00"
+            "time": "2023-03-25T05:09:29+00:00"
         },
         {
             "name": "winter/wn-blog-plugin",
@@ -9109,63 +9110,6 @@
                 }
             ],
             "time": "2023-03-20T11:51:35+00:00"
-        },
-        {
-            "name": "winter/wn-pwnedpasswords-plugin",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wintercms/wn-pwnedpasswords-plugin.git",
-                "reference": "53dd9f26ac4f94751c1f5594dcf0203553bc3b87"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wintercms/wn-pwnedpasswords-plugin/zipball/53dd9f26ac4f94751c1f5594dcf0203553bc3b87",
-                "reference": "53dd9f26ac4f94751c1f5594dcf0203553bc3b87",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.11",
-                "ext-curl": "*"
-            },
-            "default-branch": true,
-            "type": "winter-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Luke Towers",
-                    "email": "wintercms@winter.ca"
-                }
-            ],
-            "description": "Adds the notpwned validation rule to check passwords against the HIBP Pwned Passwords service",
-            "homepage": "https://github.com/wintercms/wn-pwnedpasswords-plugin",
-            "keywords": [
-                "haveibeenpwned",
-                "laravel",
-                "passwords",
-                "pwned passwords",
-                "validation",
-                "winter",
-                "wintercms"
-            ],
-            "support": {
-                "issues": "https://github.com/wintercms/wn-pwnedpasswords-plugin/issues",
-                "source": "https://github.com/wintercms/wn-pwnedpasswords-plugin/tree/main"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/wintercms",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/wintercms",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2022-03-23T22:05:18+00:00"
         },
         {
             "name": "winter/wn-redirect-plugin",
@@ -13166,7 +13110,6 @@
         "winter/wn-location-plugin": 20,
         "winter/wn-notes-plugin": 20,
         "winter/wn-pages-plugin": 20,
-        "winter/wn-pwnedpasswords-plugin": 20,
         "winter/wn-redirect-plugin": 20,
         "winter/wn-sentry-plugin": 20,
         "winter/wn-seo-plugin": 20,
@@ -13175,6 +13118,7 @@
         "winter/wn-tailwindui-plugin": 20,
         "winter/wn-translate-plugin": 20,
         "winter/wn-user-plugin": 20,
+        "luketowers/oc-essentialvars-plugin": 20,
         "winter/wn-debugbar-plugin": 20,
         "winter/wn-ignition-plugin": 20,
         "winter/wn-ray-plugin": 20,

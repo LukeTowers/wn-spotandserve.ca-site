@@ -1,0 +1,18 @@
+description = "Block layout"
+default = true
+
+[staticPage]
+useContent=false
+==
+{% partial "site/header" %}
+
+    <div class="bg-white p-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+            <h1 class="mt-2 text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl">{{ this.page.title }}</h1>
+
+            {variable type="blocks" name="blocks" blockContext="pages" tab="winter.pages::lang.editor.content"}{/variable}
+            {% partial 'blocks' blocks=blocks %}
+        </div>
+    </div>
+
+{% partial "site/footer" %}

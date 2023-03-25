@@ -1,0 +1,12 @@
+{% for blockIndex, block in blocks %}
+    {# Adding blocks to the following array allows them to implement their own containers #}
+    {% if block._group in ["hero", "section"] %}
+        {% partial block._group ~ ".block" data=block blockIndex=blockIndex %}
+    {% else %}
+        <section class="flex flex-wrap items-center mx-auto max-w-screen-xl">
+            <div class="w-full p-4">
+                {% partial block._group ~ ".block" data=block blockIndex=blockIndex %}
+            </div>
+        </section>
+    {% endif %}
+{% endfor %}

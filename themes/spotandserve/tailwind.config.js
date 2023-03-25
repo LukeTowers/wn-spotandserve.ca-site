@@ -1,5 +1,8 @@
 module.exports = {
     content: [
+        // Blocks provided by plugins
+        '../../plugins/*/*/blocks/*.block',
+
         './theme.yaml',
         './**/*.htm',
         './assets/src/js/**/*.{js,vue}'
@@ -13,5 +16,6 @@ module.exports = {
         },
     },
     plugins: [
+        require('@tailwindcss/typography'),
     ],
 }

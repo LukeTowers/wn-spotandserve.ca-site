@@ -36,7 +36,6 @@
         "winter/wn-location-plugin": "dev-main",
         "winter/wn-notes-plugin": "dev-main",
         "winter/wn-pages-plugin": "dev-main",
-        "winter/wn-pwnedpasswords-plugin": "dev-main",
         "winter/wn-redirect-plugin": "dev-main",
         "winter/wn-sentry-plugin": "dev-main",
         "winter/wn-seo-plugin": "dev-main",
@@ -45,7 +44,7 @@
         "winter/wn-tailwindui-plugin": "dev-main",
         "winter/wn-translate-plugin": "dev-main",
         "winter/wn-user-plugin": "dev-main",
-        "luketowers/oc-essentialvars-plugin": "^1.0"
+        "luketowers/oc-essentialvars-plugin": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5.8",
