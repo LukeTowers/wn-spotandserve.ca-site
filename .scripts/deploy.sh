@@ -28,6 +28,13 @@ composer install --no-dev
 echo "Discovering packages"
 php artisan package:discover
 
+# Install node modules
+echo "Installing dependencies from package-lock.json"
+artisan npm ci
+
+echo "Compiling theme assets"
+artisan mix:compile -p theme-spotandserve --production
+
 # Enable maintenance mode
 echo "Enabling maintenance mode"
 php artisan down
