@@ -1,0 +1,20 @@
+{{ form_ajax(__SELF__ ~ '::onSave', {'class': 'reportneedles-container', 'id': __SELF__}) }}
+
+    <div class="layout-row">
+        {{ form.formRender() | raw }}
+    </div>
+
+    <div class="form-buttons">
+        <div class="loading-indicator-container">
+            <button
+                type="submit"
+                data-request="{{ __SELF__ ~ '::onSave' }}"
+                data-hotkey="ctrl+s, cmd+s"
+                data-load-indicator="Submitting"
+                class="btn btn-primary">
+                Submit
+            </button>
+        </div>
+    </div>
+
+{{ form_close() }}

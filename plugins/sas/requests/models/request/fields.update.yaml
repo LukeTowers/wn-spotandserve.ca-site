@@ -1,0 +1,75 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    _btns:
+        label: Actions
+        type: partial
+        path: $/sas/requests/models/request/field.btns.php
+        span: full
+
+tabs:
+    fields:
+        data[addressfinder]:
+            label: Location
+            placeholder: 'No data'
+            tab: Map
+            type: text
+            span: full
+            disabled: true
+
+        _location:
+            label: ''
+            tab: Map
+            type: gmaps-location-picker
+            disabled: true
+            span: full
+            lat: latitude
+            lng: longitude
+
+        photo:
+            label: Picture (optional)
+            tab: Description
+            type: fileupload
+            mode: image
+            span: left
+            disabled: true
+
+        description:
+            label: Description (optional)
+            tab: Description
+            span: right
+            type: textarea
+            disabled: true
+            placeholder: There's some garbage here that needs to get picked up
+            size: small
+
+        data[contact][email]:
+            tab: Contact
+            label: Contact email (optional)
+            span: left
+            type: email
+            disabled: true
+            placeholder: bob@example.com
+
+        data[contact][phone]:
+            label: Cell phone (optional)
+            tab: Contact
+            span: right
+            disabled: true
+            placeholder: 306-555-5555
+
+        ip_address:
+            label: IP Address
+            span: left
+            disabled: true
+            tab: Contact
+
+        data[user_agent]:
+            label: User Agent
+            span: right
+            disabled: true
+            tab: Contact
+

@@ -1,0 +1,9 @@
+/*
+ * This is a sample StyleSheet file used by GMapsLocationPicker
+ *
+ * You can delete this file if you want
+ */
+.gmaps-location-picker {
+    width: 100%;
+    height: 480px;
+}

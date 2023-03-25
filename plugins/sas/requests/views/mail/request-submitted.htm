@@ -1,0 +1,24 @@
+subject = "Help requested in {{ city }}"
+description = "Sends when a request for help is submitted."
+==
+A request for help has been submitted in {{ city }} near {{ address }}.
+
+<strong>Submitted address:</strong>
+<p>{{ submitted_address }}</p>
+
+<strong>Description (required):</strong>
+<p>{{ description }}</p>
+
+<strong>Contact Email (optional):</strong>
+<p>{{ contact_email }}</p>
+
+<strong>Contact Phone (optional):</strong>
+<p>{{ contact_phone }}</p>
+
+{% partial 'button' url=link type='positive' body %}
+Get Directions
+{% endpartial %}
+
+{% partial 'button' url=admin_url type='positive' body %}
+View Details
+{% endpartial %}

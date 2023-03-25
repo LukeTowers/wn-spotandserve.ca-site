@@ -1,0 +1,32 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    created_at:
+        label: Submitted at
+        type: datetime
+    status:
+        label: Status
+    description:
+        label: Description
+    photo:
+        label: Photo
+        searchable: false
+        sortable: false
+        type: image
+    city:
+        label: City
+    province:
+        label: Province
+    directions:
+        label: Directions
+        type: partial
+        path: $/sas/requests/models/request/column.directions.php
+        clickable: false
+    updated_at:
+        label: Last updated
+        type: datetime
+        invisible: true
+        searchable: true
+        sortable: true

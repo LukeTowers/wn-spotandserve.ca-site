@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'sas.requests::lang.models.requesttype.label'
+
+# Model Form Field configuration
+form: $/sas/requests/models/requesttype/fields.yaml
+
+# Model Class name
+modelClass: SAS\Requests\Models\RequestType
+
+# Default redirect location
+defaultRedirect: sas/requests/requesttypes
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: sas/requests/requesttypes/update/:id
+    redirectClose: sas/requests/requesttypes
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: sas/requests/requesttypes
+    redirectClose: sas/requests/requesttypes
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

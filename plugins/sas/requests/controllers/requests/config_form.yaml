@@ -1,0 +1,33 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Request
+
+# Model Form Field configuration
+form: $/sas/requests/models/request/fields.yaml
+
+# Model Class name
+modelClass: SAS\Requests\Models\Request
+
+# Default redirect location
+defaultRedirect: sas/requests/requests
+
+# Create page
+create:
+    title: Create Request
+    redirect: sas/requests/requests/update/:id
+    redirectClose: sas/requests/requests
+
+# Update page
+update:
+    title: Request
+    redirect: sas/requests/requests
+    redirectClose: sas/requests/requests
+    form: $/sas/requests/models/request/fields.update.yaml
+
+# Preview page
+preview:
+    title: View Request
+    form: $/sas/requests/models/request/fields.preview.yaml

@@ -1,0 +1,72 @@
+@base_path: "../../../../..";
+// @base_path: "../../../../../Core/winter";
+
+@winterAssets: "@{base_path}/modules/backend/assets/less";
+@stormAssets: "@{base_path}/modules/system/assets/ui/less";
+
+@import "@{winterAssets}/core/boot.less";
+@font-path: "/modules/system/assets/ui/font";
+@image-path: "/modules/system/assets/ui/images";
+@icon-font-path: @font-path;
+
+@import "/modules/backend/assets/vendor/jcrop/css/jquery.Jcrop.min.css";
+@import "/modules/system/assets/vendor/prettify/prettify.css";
+@import "/modules/system/assets/vendor/prettify/theme-desert.css";
+
+@import "@{base_path}/modules/system/assets/ui/less/datepicker.less";
+
+.reportneedles-container {
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 1em 0;
+
+    label, input, button {
+        font-size: 16px !important;
+    }
+
+    // @import "@{winterAssets}/layout/layout.less";
+    // @import "@{winterAssets}/controls/panels.less";
+    // @import "@{winterAssets}/controls/selector-group.less";
+    // @import "@{winterAssets}/controls/tree-path.less";
+    // @import "@{winterAssets}/controls/namevaluelist.less";
+    // @import "@{winterAssets}/controls/scrollpad.less";
+
+    // @import "@{stormAssets}/toolbar.less";
+    // @import "@{stormAssets}/list.less";
+    // @import "@{stormAssets}/form.less";
+    // @import "@{stormAssets}/icon.less";
+
+    @import "@{stormAssets}/../storm.less";
+
+    // @import "@{base_path}/modules/backend/widgets/mediamanager/assets/less/mediamanager.less";
+
+    .form-title {
+        text-align: center;
+        margin-bottom: 2em;
+
+        h4 {
+            font-size: 1.25em;
+            font-weight: bold;
+        }
+    }
+
+    .form-buttons {
+        padding-bottom: 0 !important;
+    }
+
+    label {
+        font-size: 0.8em;
+    }
+
+    > p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@import "@{winterAssets}/../vendor/sweet-alert/sweet-alert.less";
+@import "@{stormAssets}/popup.less";
+@import "@{stormAssets}/select.less";
+.select2-container--default .select2-selection--single .select2-selection__arrow b{border:none}
+.select2-dropdown{z-index:10400}

@@ -1,0 +1,45 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    data[addressfinder]:
+        label: Start typing to search for an address
+        type: addressfinder
+        countryRestriction: 'ca'
+        required: true
+        attributes:
+            data-input-latitude: '#GMapsLocationPicker-formDataLocation-lat-data-location'
+            data-input-longitude: '#GMapsLocationPicker-formDataLocation-lng-data-location'
+
+    data[location]:
+        label: Drag the map to position the marker as close as possible to the relevant location
+        type: gmaps-location-picker
+        span: full
+
+    photo:
+        label: Picture (optional)
+        type: fileupload
+        mode: image
+        span: left
+
+    description:
+        label: Description (required)
+        span: right
+        type: textarea
+        placeholder: There's some garbage here that needs to get picked up
+        size: small
+        required: true
+
+    data[contact][email]:
+        label: Contact email (optional)
+        span: left
+        type: email
+        placeholder: bob@example.com
+
+    data[contact][phone]:
+        label: Cell phone (optional)
+        span: right
+        placeholder: 306-555-5555
+
