@@ -22,4 +22,13 @@ class Requests extends Controller
 
         BackendMenu::setContext('SAS.Requests', 'sas', 'requests');
     }
+
+    public function runAjaxHandler($handler)
+    {
+        if (is_null($this->params)) {
+            $this->params = [];
+        }
+
+        return parent::runAjaxHandler($handler);
+    }
 }
