@@ -27,7 +27,6 @@ _ide_helper.php
 
 # Other ignores
 .DS_Store
-package-lock.json
 /node_modules
 
 # Ignore the Winter CMS core modules, these are loaded from composer
