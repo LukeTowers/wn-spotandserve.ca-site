@@ -5,10 +5,6 @@ homepage: "https://spotandserve.ca"
 code: "spotandserve"
 form:
     fields:
-        googleanalytics_id:
-            label: themes.spotandserve::lang.options.googleanalytics_id
-            type: text
-            span: full
         color_primary:
             label: themes.spotandserve::lang.options.color_primary
             type: colorpicker
