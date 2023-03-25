@@ -17,6 +17,8 @@ fields:
         label: Drag the map to position the marker as close as possible to the relevant location
         type: gmaps-location-picker
         span: full
+        lat: 50.4133913
+        lng: -104.5897611
 
     photo:
         label: Picture (optional)

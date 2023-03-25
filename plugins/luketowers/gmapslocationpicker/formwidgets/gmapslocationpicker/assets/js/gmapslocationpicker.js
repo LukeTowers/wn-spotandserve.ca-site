@@ -58,6 +58,7 @@
         this.locationPicker = new locationPicker(this.$el.attr('id'), {}, {
             zoom: 20,
             streetViewControl: false,
+            center: {lat: this.options.lat, lng: this.options.lng},
             mapTypeId: 'satellite'
         });
 

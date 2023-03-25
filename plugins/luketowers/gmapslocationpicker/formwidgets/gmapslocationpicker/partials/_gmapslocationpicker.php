@@ -18,6 +18,8 @@
         data-control="gmaps-location-picker"
         data-lat-id="<?= $this->getId('lat'); ?>"
         data-lng-id="<?= $this->getId('lng'); ?>"
+        data-lat="<?= $this->lat; ?>"
+        data-lng="<?= $this->lng; ?>"
     ></div>
 
     <input
