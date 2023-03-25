@@ -1,7 +1,25 @@
 title = "Home"
 url = "/"
-layout = "default"
+layout = "empty"
 ==
-<div class="container mx-auto">
-    <h1><span class="text-primary">Home</span> <span class="text-secondary">Page</span></h1>
+<div class="relative isolate overflow-hidden bg-gray-900 aspect-w-16 aspect-h-9">
+    <div class="absolute w-[100%]">
+        <div class="aspect-w-16 aspect-h-9 pointer-events-none">
+            <iframe src="https://www.youtube.com/embed/woq2rgxLBx8?rel=0&amp;version=3&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;controls=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;showinfo=0&amp;wmode=opaque&amp;origin={{ '/' | app | url_encode }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="absolute bottom-0 right-0 top-0 left-0 bg-gray-900 pointer-events-none opacity-75"></div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 absolute py-24 sm:py-32">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+            <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Spot and Serve, <em>doing good made easy!</em></h2>
+            <p class="mt-6 text-lg leading-8 text-gray-300">Local focused platform for reporting issues within your community and finding issues that you can help solve!</p>
+        </div>
+        <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+            <div class="grid grid-cols-1 gap-y-6 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                <a href="/request">Request help <span aria-hidden="true">&rarr;</span></a>
+                <a href="/map">View map <span aria-hidden="true">&rarr;</span></a>
+                <a href="{{ 'account/register' | page }}">Sign up <span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </div>
+    </div>
 </div>

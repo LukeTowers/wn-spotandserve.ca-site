@@ -52,7 +52,7 @@ return [
             'port' => env('DB_PORT', '3306'),
             'prefix' => '',
             'prefix_indexes' => true,
-            'strict' => true,
+            'strict' => false,
             'unix_socket' => env('DB_SOCKET', ''),
             'url' => env('DATABASE_URL'),
             'username' => env('DB_USERNAME', ''),

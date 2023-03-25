@@ -37,6 +37,7 @@ public
 
 # Ignore plugins loaded from composer
 /plugins/winter
+/plugins/sunlab
 /plugins/luketowers/essentialvars
 
 # Ignore themes loaded from composer

@@ -44,7 +44,9 @@
         "winter/wn-tailwindui-plugin": "dev-main",
         "winter/wn-translate-plugin": "dev-main",
         "winter/wn-user-plugin": "dev-main",
-        "luketowers/oc-essentialvars-plugin": "dev-master"
+        "luketowers/oc-essentialvars-plugin": "dev-master",
+        "sunlab/wn-levelup-plugin": "^1.0",
+        "sunlab/wn-gamification-plugin": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5.8",

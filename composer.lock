@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "949f71f33c2d671f84546421761d95f9",
+    "content-hash": "a0e67f8c0d27b377f485cc5032004825",
     "packages": [
         {
             "name": "assetic/framework",
@@ -5125,6 +5125,152 @@
                 }
             ],
             "time": "2023-03-22T10:51:03+00:00"
+        },
+        {
+            "name": "sunlab/wn-gamification-plugin",
+            "version": "v1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SunLabDev/wn-gamification-plugin.git",
+                "reference": "b3bb6d149c338670e3cca3de140d4ba48faed641"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SunLabDev/wn-gamification-plugin/zipball/b3bb6d149c338670e3cca3de140d4ba48faed641",
+                "reference": "b3bb6d149c338670e3cca3de140d4ba48faed641",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=7.0",
+                "sunlab/wn-measures-plugin": "^v1.0.0",
+                "winter/wn-user-plugin": "dev-main"
+            },
+            "type": "winter-plugin",
+            "extra": {
+                "installer-name": "gamification"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romain 'Maz' B",
+                    "email": "romainmazb@gmail.com",
+                    "role": "Original Author"
+                }
+            ],
+            "description": "A Gamification plugin for WinterCMS",
+            "homepage": "https://github.com/sunlabdev/wn-gamification-plugin",
+            "keywords": [
+                "Gamification",
+                "plugin",
+                "winter",
+                "winter cms"
+            ],
+            "support": {
+                "issues": "https://github.com/sunlabdev/wn-gamification-plugin/issues",
+                "source": "https://github.com/sunlabdev/wn-gamification-plugin"
+            },
+            "time": "2021-05-24T19:20:53+00:00"
+        },
+        {
+            "name": "sunlab/wn-levelup-plugin",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SunLabDev/wn-levelup-plugin.git",
+                "reference": "045387c2ab110678f199e9ebe940c64f44ad0694"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SunLabDev/wn-levelup-plugin/zipball/045387c2ab110678f199e9ebe940c64f44ad0694",
+                "reference": "045387c2ab110678f199e9ebe940c64f44ad0694",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=7.0",
+                "sunlab/wn-measures-plugin": "^v1.0.42",
+                "winter/wn-user-plugin": "dev-main"
+            },
+            "type": "winter-plugin",
+            "extra": {
+                "installer-name": "levelup"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romain 'Maz' B",
+                    "email": "romainmazb@gmail.com",
+                    "role": "Original Author"
+                }
+            ],
+            "description": "A Level plugin for WinterCMS",
+            "homepage": "https://github.com/sunlabdev/wn-levelup-plugin",
+            "keywords": [
+                "experience",
+                "level",
+                "plugin",
+                "winter",
+                "winter cms"
+            ],
+            "support": {
+                "issues": "https://github.com/sunlabdev/wn-levelup-plugin/issues",
+                "source": "https://github.com/sunlabdev/wn-levelup-plugin"
+            },
+            "time": "2021-06-05T19:09:06+00:00"
+        },
+        {
+            "name": "sunlab/wn-measures-plugin",
+            "version": "v1.0.42",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SunLabDev/wn-measures-plugin.git",
+                "reference": "98cc220bd14f1f2def6e98a5e46c8a849f12eda1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SunLabDev/wn-measures-plugin/zipball/98cc220bd14f1f2def6e98a5e46c8a849f12eda1",
+                "reference": "98cc220bd14f1f2def6e98a5e46c8a849f12eda1",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=7.0"
+            },
+            "type": "winter-plugin",
+            "extra": {
+                "installer-name": "measures"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romain 'Maz' B",
+                    "email": "romainmazb@gmail.com",
+                    "role": "Original Author"
+                }
+            ],
+            "description": "Allows you to create/increment and display any measures you want on any model",
+            "homepage": "https://github.com/sunlabdev/wn-measures-plugin",
+            "keywords": [
+                "emoji",
+                "plugin",
+                "winter",
+                "winter cms"
+            ],
+            "support": {
+                "issues": "https://github.com/sunlabdev/wn-measures-plugin/issues",
+                "source": "https://github.com/sunlabdev/wn-measures-plugin"
+            },
+            "time": "2021-06-04T21:56:28+00:00"
         },
         {
             "name": "symfony/console",
